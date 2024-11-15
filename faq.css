@@ -1,0 +1,124 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6fbf73, #1a535c);
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure navbar stays on top */
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #6fbf73; /* Matches the gradient theme */
+    transform: scale(1.1);
+  }
+  
+  .nav-item.active {
+    color: #1a535c;
+    text-decoration: underline; /* Highlights the active page */
+  }
+  
+  /* FAQ Container */
+  .faq-container {
+    width: 80%;
+    margin: 100px auto; /* Adjusted for fixed navbar */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* FAQ Heading */
+  .faq-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a535c;
+    margin-bottom: 30px;
+  }
+  
+  /* FAQ Item Styling */
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .faq-header {
+    width: 100%;
+    padding: 15px;
+    background: #1a535c;
+    color: white;
+    border: none;
+    text-align: left;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .faq-header:hover {
+    background: #6fbf73;
+  }
+  
+  /* FAQ Content Styling */
+  .faq-content {
+    display: none;
+    background: #e7e7e7;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  
+  .faq-content p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .faq-container {
+      width: 90%;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .nav-item {
+      margin: 5px 10px;
+      font-size: 0.9rem;
+    }
+  }
+  

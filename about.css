@@ -1,0 +1,62 @@
+/* General Team Member Hover Effect */
+.team-member {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Matches animation style above */
+}
+
+.team-member:hover {
+    transform: translateY(-10px) scale(1.05); /* Subtle zoom and upward motion */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Consistent shadow intensity */
+}
+
+/* Social Link Hover Effect */
+.social-link img {
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
+    filter: grayscale(100%); /* Initial grayscale for subdued style */
+}
+
+.social-link:hover img {
+    transform: scale(1.2); /* Highlighted zoom effect */
+    filter: grayscale(0); /* Brighten on hover */
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #6fbf73, #1a535c); /* Gradient matches heading and intro */
+    backdrop-filter: blur(5px); /* Subtle blur for visual depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Unified shadow */
+    z-index: 100; /* Ensures navbar stays on top */
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    justify-content: center; /* Centered for alignment */
+    padding: 10px 0;
+    list-style: none;
+}
+
+/* Individual Navigation Items */
+.nav-item {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white; /* Adjusted to white for contrast against gradient */
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7); /* Bright white glow */
+    color: #6fbf73; /* Light green hover color */
+}
+
+/* Active Navigation Item */
+.nav-item.active {
+    color: #6fbf73; /* Green tone for the active link */
+    border-bottom: 2px solid white; /* Subtle underline for active link */
+}
